@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תחרות מאסטר שף בב</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="logo_vanunu.png" alt="Logo" class="logo">
+    <div id="welcomeScreen" class="welcome-screen" role="dialog" aria-labelledby="welcomeHeading" aria-describedby="welcomeDescription">
+        <div class="pulsating-circle"></div>
+        <h1 id="welcomeHeading">ברוכים הבאים לתחרות "מאסטר שף" הגדולה!</h1>
+        <div class="bouncing-icons">
+            🍳 👩‍🍳 🍽️
+        </div>
+        <p id="welcomeDescription">לחצו על הכפתור כדי להתחיל את התחרות המרגשת שלנו!</p>
+        <div class="buttons-container">
+            <button id="startGameBtn" aria-label="התחל משחק">התחל משחק</button>
+            <button id="fullscreenBtn" aria-label="הצג במסך מלא">מסך מלא</button>
+        </div>
+    </div>
+    <h1>🔥מאסטר שף חנוכה🔥</h1>
+    <div class="game-container">
+        <div class="team" id="team1">
+            <div class="team-header">
+                <div class="team-image">
+                    <img src="gefen_Donuts.jpg" alt="gefen_Donuts">
+                    <img src="gefen.png" alt="גפן_מדריכים">
+                  </div>                
+                  <h2>גפן</h2>
+            </div>
+            <div class="candle">
+                <div class="glow"></div>
+                <div class="fill" id="fill1"></div>
+            </div>
+            <div class="score-box">
+                <p id="score1">0</p>
+            </div> 
+            <div class="bubble" id="bubble1"></div>
+        </div>
+        <div class="team" id="team2">
+            <div class="team-header">
+                <div class="team-image">
+                    <img src="hita_Donuts.jpg" alt="hita_Donuts">
+                    <img src="hita.png" alt="חיטה_מדריכים">
+                  </div>                 
+                  <h2>חיטה</h2>
+            </div>
+            <div class="candle">
+                <div class="glow"></div>
+                <div class="fill" id="fill2"></div>
+            </div>
+            <div class="score-box">
+                <p id="score2">0</p>
+            </div> 
+            <div class="bubble" id="bubble2"></div>
+        </div>
+    </div>
+    <div class="controls">
+        <h2>הוספת נקודות</h2>
+        <label for="teamSelect">בחר קבוצה:</label>
+        <select id="teamSelect">
+            <option value="1">גפן</option>
+            <option value="2">חיטה</option>
+        </select>
+        <label for="points">מספר נקודות:</label>
+        <input type="number" id="points" min="1" max="10" value="1">
+        <button id="addPoints">הוסף נקודות</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
