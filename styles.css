@@ -664,55 +664,153 @@ h1 {
 }
 
 
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem; 
+@media (max-width: 768px) {
+    .victory-container {
+        padding: 15px;
     }
 
-    .game-container {
-        flex-direction: column; 
-        height: auto;
+    .victory-container h1 {
+        font-size: 2rem;
     }
+
+    .victory-container h2,
+    .victory-container h3 {
+        font-size: 1.2rem;
+    }
+
+    .team-image {
+        max-width: 150px;
+    }
+
+    #restartBtn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .welcome-screen h1 {
+        font-size: 2.5em;         margin-bottom: 10px;
+    }
+
+    .welcome-screen button {
+        padding: 15px 30px;         font-size: 1.2em;
+    }
+
+    .bouncing-icons {
+        font-size: 2.5em;     }
 
     .team {
-        width: 100px; 
-        height: 250px; 
+        width: 200px;         height: auto;
     }
 
-    .candle {
-        height: 150px; 
-    }
+    .team-header {
+        font-size: 1.4rem;     }
 
     .score-box {
-        width: 100px; 
+        width: 100px;
+        height: 50px;
     }
 
     #fullscreenBtn {
-        font-size: 14px; 
-        padding: 8px 16px;
+        font-size: 14px;         padding: 8px 16px;
     }
 }
 
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 2rem; 
+@media (min-width: 769px) and (max-width: 1200px) {
+    .victory-container {
+        max-width: 70%;
+    }
+
+    .victory-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .victory-container h2,
+    .victory-container h3 {
+        font-size: 1.4rem;
+    }
+
+    .team-image {
+        max-width: 200px;
+    }
+
+    #restartBtn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .welcome-screen h1 {
+        font-size: 3.5em;
+    }
+
+    .welcome-screen button {
+        padding: 18px 36px;
+        font-size: 1.5em;
+    }
+
+    .bouncing-icons {
+        font-size: 3em;
     }
 
     .team {
-        width: 80px; 
-        height: 200px;
+        width: 230px;
     }
 
-    .candle {
-        height: 120px; 
+    .team-header {
+        font-size: 1.6rem;
     }
 
     .score-box {
-        width: 80px; 
+        width: 110px;
+        height: 55px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .victory-container {
+        max-width: 50%;
     }
 
-    #fullscreenBtn {
-        font-size: 12px; 
-        padding: 6px 12px;
+    .victory-container h1 {
+        font-size: 3rem;
+    }
+
+    .victory-container h2,
+    .victory-container h3 {
+        font-size: 1.8rem;
+    }
+
+    .team-image {
+        max-width: 250px;
+    }
+
+    #restartBtn {
+        font-size: 1.2rem;
+    }
+
+    .welcome-screen h1 {
+        font-size: 5em;
+    }
+
+    .welcome-screen button {
+        padding: 20px 40px;
+        font-size: 1.8em;
+    }
+
+    .bouncing-icons {
+        font-size: 4em;
+    }
+
+    .team {
+        width: 250px;
+        height: 400px;
+    }
+
+    .team-header {
+        font-size: 1.8rem;
+    }
+
+    .score-box {
+        width: 120px;
+        height: 60px;
     }
 }
