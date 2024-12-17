@@ -21,16 +21,22 @@ const pointsInput = document.getElementById('points');
 
 const teams = {
     1: {
-        name: "גפן",
+        name: "רימון",
         score: 0,
         sound: new Audio('sound1.mp3'),
-        image: 'gefen.png'
+        image: 'rimon.png'
     },
     2: {
-        name: "חיטה",
+        name: "סביון",
         score: 0,
         sound: new Audio('sound2.mp3'),
-        image: 'hita.png'
+        image: 'savion.png'
+    },
+    3: {
+        name: "זית",
+        score: 0,
+        sound: new Audio('sound3.mp3'),
+        image: 'zait.png'
     }
 };
 const victorySound = new Audio('victory.mp3');
@@ -108,6 +114,10 @@ function showVictoryScreen() {
                 <h3>🥈 מקום שני: קבוצת ${sortedTeams[1].name} - ${sortedTeams[1].score} נקודות</h3>
                 <img src="${sortedTeams[1].image}" alt="תמונת קבוצת ${sortedTeams[1].name}" class="team-image second-place-image" />
             </div>
+            <div class="second-place">
+            <h3>🥉 מקום שלישי: קבוצת ${sortedTeams[2].name} - ${sortedTeams[2].score} נקודות</h3>
+            <img src="${sortedTeams[2].image}" alt="תמונת קבוצת ${sortedTeams[2].name}" class="team-image second-place-image" />
+        </div>
             <button id="restartBtn">התחל משחק חדש</button>
         </div>
     `;
