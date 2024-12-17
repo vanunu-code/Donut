@@ -44,7 +44,7 @@
 }
 
 .welcome-screen h1 {
-    font-size: 4em;
+    font-size: 3.7em;
     margin-bottom: 20px;
     animation: fadeInText 3s ease-in-out, textPulse 2s infinite; 
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.9), 0 0 30px #ff80ff;
@@ -402,89 +402,6 @@ h1 {
     color: #ffa500;
 }
 
-
-#victoryScreen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    font-family: 'Arial', sans-serif;
-    animation: fadeIn 2s ease-out; 
-}
-
-
-@keyframes fadeIn {
-    0% { opacity: 0; transform: scale(0.9); }
-    100% { opacity: 1; transform: scale(1); }
-}
-
-
-@keyframes glow {
-    0% { color: #ff6347; text-shadow: 0 0 5px #ff6347, 0 0 10px #ff6347, 0 0 20px #ff6347; }
-    50% { color: #ffd700; text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700; }
-    100% { color: #ff6347; text-shadow: 0 0 5px #ff6347, 0 0 10px #ff6347, 0 0 20px #ff6347; }
-}
-
-
-.victory-container h1 {
-    font-size: 5em;
-    font-weight: bold;
-    animation: glow 1.5s ease-in-out infinite;
-    text-shadow: 0 0 15px rgba(255, 215, 0, 0.9); 
-    margin-bottom: 20px; 
-}
-
-
-#victoryScreen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    font-family: 'Arial', sans-serif;
-    animation: fadeIn 2s ease-out; 
-}
-
-
-@keyframes fadeIn {
-    0% { opacity: 0; transform: scale(0.9); }
-    100% { opacity: 1; transform: scale(1); }
-}
-
-
-@keyframes glow {
-    0% { color: #ff6347; text-shadow: 0 0 5px #ff6347, 0 0 10px #ff6347, 0 0 20px #ff6347; }
-    50% { color: #ffd700; text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700; }
-    100% { color: #ff6347; text-shadow: 0 0 5px #ff6347, 0 0 10px #ff6347, 0 0 20px #ff6347; }
-}
-
-
-.victory-container h1 {
-    font-size: 6em; 
-    font-weight: bold;
-    animation: glow 1.5s ease-in-out infinite;
-    text-shadow: 0 0 20px rgba(255, 215, 0, 0.9); 
-    margin-bottom: 40px; 
-    text-align: center; 
-}
-
-
-
 #victoryScreen {
     position: fixed;
     top: 0;
@@ -559,7 +476,7 @@ h1 {
 
 
 .second-place-image {
-    width: 200px; 
+    width: 180px; 
     height: auto;
     border-radius: 20px;
     box-shadow: 0 0 15px rgba(192, 192, 192, 1), 0 0 30px rgba(192, 192, 192, 0.8);
@@ -730,7 +647,7 @@ h1 {
     }
 
     .team-image {
-        max-width: 200px;
+        max-width: 300px;
     }
 
     #restartBtn {
